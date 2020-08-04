@@ -2,7 +2,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 
-// week 2
+// PART 2
 
 /*
 // ¹®Á¦ 11-1-1
