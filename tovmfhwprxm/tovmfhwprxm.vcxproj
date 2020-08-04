@@ -24,6 +24,7 @@
     <ProjectGuid>{8e2da4ad-1e80-428b-b6e3-00305c79106d}</ProjectGuid>
     <RootNamespace>tovmfhwprxm</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>cstudymycodes</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,7 +140,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="tothtm.c" />
+    <ClCompile Include="part1thing.c" />
+    <ClCompile Include="part2thing.c" />
+    <ClCompile Include="dojeon1thing.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

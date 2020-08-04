@@ -15,7 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="tothtm.c">
+    <ClCompile Include="part2thing.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dojeon1thing.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="part1thing.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

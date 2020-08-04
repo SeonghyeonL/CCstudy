@@ -1,9 +1,8 @@
 // 도전 프로그래밍 1
-// 내용 
 
 #include <stdio.h>
 
-
+/*
 // 도전 1
 int main(void)
 {
@@ -16,7 +15,7 @@ int main(void)
 	// %o는	부호 없는 8진수 정수
 	return 0;
 }
-
+*/
 
 /*
 // 도전 2
