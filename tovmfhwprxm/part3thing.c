@@ -54,7 +54,7 @@ int main(void)
 */
 
 // 巩力 16-1-3
-
+/*
 // 己利 包府 橇肺弊伐
 int main(void)
 {
@@ -71,9 +71,24 @@ int main(void)
 			sc[i][4] += sc[i][j];
 		}
 	}
-	sc[4][0] = sc[0][0] + sc[1][0] + sc[2][0] + sc[3][0];
-	sc[4][1] = sc[0][1] + sc[1][1] + sc[2][1] + sc[3][1];
-	// ... ummm
-	sc[4][4] = sc[0][4] + sc[1][4] + sc[2][4] + sc[3][4];
+	for (i = 0;i <= 4;i++)
+	{
+		sc[4][i] = 0;
+		for (j = 0;j < 4;j++)
+		{
+			sc[4][i] += sc[j][i];
+		}
+	}
+	for (i = 0;i<5;i++)
+	{
+		for (j = 0;j<5;j++)
+		{
+			printf("%d ", sc[i][j]);
+		}
+		printf("\n");
+	}
 	return 0;
 }
+*/
+
+// 巩力
