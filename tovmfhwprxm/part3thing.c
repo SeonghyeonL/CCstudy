@@ -91,4 +91,29 @@ int main(void)
 }
 */
 
-// 문제 17-
+// 문제 17-1
+/*
+void MaxAndMin(int** MAXX, int** MINN, int *ary)
+{
+	int *a, *b;
+	a = b = &ary[0];
+	for (int i = 0;i < 5;i++)
+	{
+		if (*a < ary[i]) a = &ary[i];
+		if (*b > ary[i]) b = &ary[i];
+	}
+	*MAXX = a; *MINN = b;
+}
+
+int main(void)
+{
+	int* maxPtr; int* minPtr; int arr[5];
+	printf("정수 5개: ");
+	scanf_s("%d %d %d %d %d",
+		&arr[0], &arr[1], &arr[2], &arr[3], &arr[4]);
+	MaxAndMin(&maxPtr, &minPtr, arr);
+	printf("MAX:%d, MIN:%d\n", *maxPtr, *minPtr);
+	return 0;
+}
+*/
+
