@@ -144,6 +144,7 @@
     <ClCompile Include="part2thing.c" />
     <ClCompile Include="dojeon1thing.c" />
     <ClCompile Include="part3thing.c" />
+    <ClCompile Include="part4thing.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

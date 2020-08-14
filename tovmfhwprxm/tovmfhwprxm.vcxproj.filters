@@ -27,5 +27,8 @@
     <ClCompile Include="part3thing.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="part4thing.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
