@@ -134,3 +134,33 @@ int main(void)
 */
 
 // 문제 22-2
+/*
+struct employee
+{
+	char name[20];
+	char num[20];
+	int payy;
+};
+
+int main(void)
+{
+	struct employee emp[3];
+
+	for (int i = 0;i < 3;i++)
+	{
+		printf("%d번 종업원 이름: ", i+1); scanf_s("%s", emp[i].name, 20);
+		printf("%d번 주민등록번호: ", i+1); scanf_s("%s", emp[i].num, 20);
+		printf("%d번 급여정보: ", i+1); scanf_s("%d", &(emp[i].payy));
+	}
+	for (int i = 0;i < 3;i++)
+	{
+		printf("%d: %s / %s / %d\n", 
+			i+1, emp[i].name, emp[i].num, emp[i].payy);
+	}
+	return 0;
+}
+*/
+
+// 문제 23-1
+
+
