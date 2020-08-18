@@ -57,5 +57,57 @@ int main(void)
 */
 
 // 문제 21-2-3
+/*
+// "이정선 29" - 이름과 나이 사이에만 공백이 삽입
+// 두 사람의 정보 입력 -> 이름과 나이 각각 같은지 판단
+#include <string.h>
+#include <stdlib.h>
+int main(void)
+{
+	char per1[20]; char per2[20];
+	char dl1[20]; char dl2[20];
+	int sk1, sk2;
 
+	printf("형식: 이름 나이 (공백 필수)\n");
+	printf("1번 정보 입력: ");
+	fgets(per1, sizeof(per1), stdin);
+	per1[strlen(per1) - 1] = 0;
+	printf("2번 정보 입력: ");
+	fgets(per2, sizeof(per2), stdin);
+	per2[strlen(per2) - 1] = 0;
 
+	for (int i = 0;i < strlen(per1);i++)
+	{
+		if (per1[i] == ' ')
+		{
+			strncpy_s(dl1, sizeof(dl1), per1, i);
+			sk1 = atoi(&per1[i + 1]);
+		}
+	}
+	for (int i = 0;i < strlen(per2);i++)
+	{
+		if (per2[i] == ' ')
+		{
+			strncpy_s(dl2, sizeof(dl2), per2, i);
+			sk2 = atoi(&per2[i + 1]);
+		}
+	}
+	if (!strcmp(dl1, dl2))
+	{
+		if (sk1 == sk2)
+			puts("이름 일치 / 나이 일치");
+		else
+			puts("이름 일치 / 나이 불일치");
+	}
+	else
+	{
+		if (sk1 == sk2)
+			puts("이름 불일치 / 나이 일치");
+		else
+			puts("이름 불일치 / 나이 불일치");
+	}
+	return 0;
+}
+*/
+
+// 문제 22-
