@@ -110,4 +110,27 @@ int main(void)
 }
 */
 
-// 문제 22-
+// 문제 22-1
+/*
+// 종업원 이름, 주민등록번호, 급여정보
+struct employee
+{
+	char name[20];
+	char num[20];
+	int payy;
+};
+
+int main(void)
+{
+	struct employee emp;
+
+	printf("종업원 이름: "); scanf_s("%s", emp.name, 20);
+	printf("주민등록번호: "); scanf_s("%s", emp.num, 20);
+	printf("급여정보: "); scanf_s("%d", &(emp.payy));
+
+	printf("%s / %s / %d\n", emp.name, emp.num, emp.payy);
+	return 0;
+}
+*/
+
+// 문제 22-2
