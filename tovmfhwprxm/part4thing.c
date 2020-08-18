@@ -16,15 +16,46 @@ int main(void)
 }
 */
 
-// 문제 21-
+// 문제 21-2-1
+/*
+// 문자열 입력 -> 숫자의 총합
+#include <string.h>
 int main(void)
 {
-	char str[7];
-	int i;
-	for (i = 0;i < 3;i++)
+	char thgs[40];
+	int i, j; int sum = 0;
+	fputs("문자열 입력: ", stdout);
+	fgets(thgs, sizeof(thgs), stdin);
+	for (i = 0;i < strlen(thgs);i++)
 	{
-		fgets(str, sizeof(str), stdin);
-		printf("Read %d: %s\n", i + 1, str);
+		if (thgs[i] > '0' && thgs[i] <= '9')
+			sum += (thgs[i]-48) ;
 	}
+	printf("숫자의 총 합: %d", sum);
 	return 0;
 }
+*/
+
+// 문제 21-2-2
+/*
+// 문자열 입력(fgets), str1 -> str3, str3+str2
+#include <string.h>
+int main(void)
+{
+	char str1[20]; char str2[20]; char str3[40];
+	printf("1번 문자열 입력: ");
+	fgets(str1, sizeof(str1), stdin);
+	printf("2번 문자열 입력: ");
+	fgets(str2, sizeof(str2), stdin);
+	int len1 = strlen(str1); str1[len1 - 1] = 0;
+	int len2 = strlen(str2); str2[len2 - 1] = 0;
+	strcpy_s(str3, sizeof(str1), str1);
+	strcat_s(str3, sizeof(str2), str2);
+	puts(str3);
+	return 0;
+}
+*/
+
+// 문제 21-2-3
+
+
