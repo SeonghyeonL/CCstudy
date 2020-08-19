@@ -263,11 +263,37 @@ int main(void)
 */
 
 // 문제 24-1-2
+/*
 // 데이터를 추가하자
-
+int main(void)
+{
+	FILE* fp;
+	fopen_s(&fp, "D:\\1111111\\simple.txt", "at");
+	fputs("#즐겨먹는 음식: 짬뽕, 탕수육 \n", fp);
+	fputs("#취미: 축구 \n", fp);
+	fclose(fp);
+	return 0;
+}
+*/
 
 // 문제 24-1-3
+/*
+// 문제 1과 2에서 생성한 정보 전체 출력
+int main(void)
+{
+	char sth[30];
+	FILE* fp;
+	fopen_s(&fp, "D:\\1111111\\simple.txt", "rt");
+	for (int i = 0;i < 6;i++)
+	{
+		fgets(sth, sizeof(sth), fp);
+		printf("%s", sth);
+	}
+	fclose(fp);
+	return 0;
+}
+*/
 
-
+// 문제 24-2
 
 
