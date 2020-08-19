@@ -1,5 +1,5 @@
-#include <stdio.h>
 #define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
 
 // 문제 21-1
 /*
@@ -244,4 +244,30 @@ int main(void)
 }
 */
 
-// 문제 24-1
+// 문제 24-1-1
+/*
+int main(void)
+{
+	FILE* fp;
+	fopen_s(&fp, "D:\\1111111\\simple.txt", "wt");
+	if (fp == NULL)
+	{
+		printf("실패\n"); return -1;
+	}
+	fprintf(fp, "#이름: 윤성우 \n");
+	fprintf(fp, "#주민번호: 900208-1012589 \n");
+	fputs("#전화번호: 010-1111-2222 \n", fp);
+	fclose(fp);
+	return 0;
+}
+*/
+
+// 문제 24-1-2
+// 데이터를 추가하자
+
+
+// 문제 24-1-3
+
+
+
+
