@@ -187,5 +187,61 @@ int main(void)
 */
 
 // 문제 23-2
+/*
+typedef struct point
+{
+	int xpos;
+	int ypos;
+} Point;
 
+typedef struct rectangle
+{
+	Point upp;
+	Point downn;
+} Rectangle;
 
+int AreaofRec(Rectangle recc)
+{
+	int rkfh, tpfh, sjfqdl;
+	if (recc.downn.xpos >= recc.upp.xpos)
+		rkfh = recc.downn.xpos - recc.upp.xpos;
+	else rkfh = recc.upp.xpos - recc.downn.xpos;
+	tpfh = recc.upp.ypos - recc.downn.ypos;
+	sjfqdl = rkfh * tpfh;
+	return sjfqdl;
+}
+
+void Fourpt(Rectangle recc)
+{
+	if (recc.downn.xpos >= recc.upp.xpos)
+	{
+		printf("왼쪽위:     [%d, %d]    ", recc.upp.xpos, recc.upp.ypos);
+		printf("오른쪽위:   [%d, %d]\n", recc.downn.xpos, recc.upp.ypos);
+		printf("왼쪽아래:   [%d, %d]    ", recc.upp.xpos, recc.downn.ypos);
+		printf("오른쪽아래: [%d, %d]\n", recc.downn.xpos, recc.downn.ypos);
+	}
+	else
+	{
+		printf("왼쪽위:     [%d, %d]    ", recc.downn.xpos, recc.upp.ypos);
+		printf("오른쪽위:   [%d, %d]\n", recc.upp.xpos, recc.upp.ypos);
+		printf("왼쪽아래:   [%d, %d]    ", recc.downn.xpos, recc.downn.ypos);
+		printf("오른쪽아래: [%d, %d]\n", recc.upp.xpos, recc.downn.ypos);
+	}
+}
+
+int main(void)
+{
+	Rectangle rect;
+	printf("위쪽 점: ");
+	scanf_s("%d %d", &(rect.upp.xpos), &(rect.upp.ypos));
+	printf("아래쪽 점: ");
+	scanf_s("%d %d", &(rect.downn.xpos), &(rect.downn.ypos));
+	int areaa;
+	areaa = AreaofRec(rect);
+	printf("넓이: %d\n", areaa);
+	Fourpt(rect);
+	return 0;
+}
+*/
+
+// 문제 24-1
