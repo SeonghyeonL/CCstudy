@@ -295,5 +295,35 @@ int main(void)
 */
 
 // 문제 24-2
+/*
+int main(void)
+{
+	FILE* fp;
+	fopen_s(&fp, "D:\\1111111\\rPtks.txt", "rt");
+	char howlarge[100];
+	fgets(howlarge, sizeof(howlarge), fp);
+	fputs(howlarge, stdout);
+	int sizee, midd;
+	midd = ftell(fp);
+	fseek(fp, 0, SEEK_END);
+	sizee = ftell(fp);
+	fseek(fp, midd, SEEK_SET);
+	printf("파일 크기: %d \n", sizee);
+	fgets(howlarge, sizeof(howlarge), fp);
+	fputs(howlarge, stdout);
+	midd = ftell(fp);
+	fseek(fp, 0, SEEK_END);
+	sizee = ftell(fp);
+	fseek(fp, midd, SEEK_SET);
+	printf("파일 크기: %d \n", sizee);  // 값 불변
+	fgets(howlarge, sizeof(howlarge), fp);
+	fputs(howlarge, stdout);
+	fgets(howlarge, sizeof(howlarge), fp);
+	fputs(howlarge, stdout);
+	fclose(fp);
+	return 0;
+}
+*/
 
+// 문제 25-1
 
