@@ -325,5 +325,42 @@ int main(void)
 }
 */
 
-// 문제 25-1
+// 문제 25-2-1
+/*
+#include <stdlib.h>
+#include <string.h>
+
+int main(void)
+{
+	int len;
+	printf("입력할 문자열의 최대길이: ");
+	scanf_s("%d", &len);
+	getchar();
+	char* sen = (char*)malloc(sizeof(char) * (len+1));
+	printf("문자열: ");
+	fgets(sen, len+1, stdin);
+	int rlfdl = strlen(sen);
+	sen[rlfdl - 1] = 0;
+	for (int i = 0;i < rlfdl;i++)
+	{
+		if (sen[rlfdl - i] == ' ')
+		{
+			printf("%s ", &sen[rlfdl +1 - i]);
+			sen[rlfdl -i] = 0;
+		}
+	}
+	printf("%s ", &sen[0]);
+	free(sen);
+	return 0;
+}
+*/
+
+
+
+
+// 문제 25-2-2
+
+
+
+
 
