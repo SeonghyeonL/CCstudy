@@ -336,9 +336,9 @@ int main(void)
 	printf("입력할 문자열의 최대길이: ");
 	scanf_s("%d", &len);
 	getchar();
-	char* sen = (char*)malloc(sizeof(char) * (len+1));
+	char* sen = (char*)malloc(sizeof(char) * len);
 	printf("문자열: ");
-	fgets(sen, len+1, stdin);
+	fgets(sen, len, stdin);
 	int rlfdl = strlen(sen);
 	sen[rlfdl - 1] = 0;
 	for (int i = 0;i < rlfdl;i++)
@@ -354,9 +354,6 @@ int main(void)
 	return 0;
 }
 */
-
-
-
 
 // 문제 25-2-2
 
