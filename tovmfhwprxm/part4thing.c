@@ -384,8 +384,50 @@ int main(void)
 }
 */
 
-// 문제 26-1
+// 문제 26-1-1
+/*
+//세 개의 정수를 받아서 덧셈, 곱셈
+#define PLUS(A,B,C) ((A)+(B)+(C))
+#define MUL(A,B,C) ((A)*(B)*(C))
+int main(void)
+{
+	int a, b, c;
+	printf("세 개의 정수: ");
+	scanf_s("%d %d %d", &a, &b, &c);
+	printf("%d+%d+%d=%d\n", a, b, c, PLUS(a, b, c));
+	printf("%d*%d*%d=%d\n", a, b, c, MUL(a, b, c));
+	return 0;
+}
+*/
 
+// 문제 26-1-2
+/*
+// 원주율 PI 정의, 원의 넓이 AREA
+#define PI 3.14
+#define AREA(R) ((R)*(R)*PI)
+int main(void)
+{
+	double a;
+	printf("반지름: ");
+	scanf_s("%lf", &a);
+	printf("넓이: %f\n", AREA(a));
+	return 0;
+}
+*/
+
+// 문제 26-1-3
+/*
+// 두 값 비교 큰 값 반환 MAX
+#define MAX(A,B) ((A)>(B)?(A):(B))
+int main(void)
+{
+	double a, b;
+	printf("두 값 입력: ");
+	scanf_s("%lf %lf", &a, &b);
+	printf("큰 값: %f", MAX(a, b));
+	return 0;
+}
+*/
 
 
 
