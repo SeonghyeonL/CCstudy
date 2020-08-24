@@ -356,7 +356,35 @@ int main(void)
 */
 
 // 문제 25-2-2
+/*
+#include <stdlib.h>
+int main(void)
+{
+	int cnt = 0;
+	int fiv = 5;
+	int* sum = (int*)malloc(sizeof(int) * fiv);
+	while (1)
+	{
+		printf("정수 입력: ");
+		scanf_s("%d", &sum[cnt]);
+		getchar();
+		if (sum[cnt] == -1)
+			break;
+		if (cnt == 4)
+		{
+			fiv = fiv + 3;
+			sum = (int*)realloc(sum, sizeof(int) * fiv);
+		}
+		cnt++;
+	}
+	for (int i = 0;i < cnt;i++)
+		printf("%d ", sum[i]);
+	free(sum);
+	return 0;
+}
+*/
 
+// 문제 26-1
 
 
 
