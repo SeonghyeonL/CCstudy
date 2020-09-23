@@ -417,7 +417,7 @@ int main(void)
 
 // 문제 26-1-3
 /*
-// 두 값 비교 큰 값 반환 MAX
+// 두 값 비교 큰 값 반환 using MAX
 #define MAX(A,B) ((A)>(B)?(A):(B))
 int main(void)
 {
